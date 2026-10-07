@@ -66,7 +66,7 @@ export function createStudentRouter(store) {
     }
     const student = { id: store.nextId++, ...result.student };
     store.students.push(student);
-    return res.status(201).json(student);
+    return res.status(200).json(student);
   });
 
   router.param('id', (req, res, next, value) => {
