@@ -1,0 +1,32 @@
+EXÉCUTION LOCALE — NE REMPLACE PAS LA CAPTURE GITHUB ACTIONS
+Bug volontaire : POST renvoie 200 au lieu de 201.
+✖ POST valide : 201, ID auto-généré et persistance (26.3831ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 239.2066
+
+✖ failing tests:
+
+test at tests\students.test.js:43:1
+✖ POST valide : 201, ID auto-généré et persistance (26.3831ms)
+  Error: expected 201 "Created", got 200 "OK"
+      at TestContext.<anonymous> (file:///C:/Users/Kenzi/.codex/.chatgpt-projects/g-p-6abed0a9b080819197c123bcc3e8bb47/students-api/tests/students.test.js:44:85)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ----
+      at Test._assertStatus (C:\Users\Kenzi\.codex\.chatgpt-projects\g-p-6abed0a9b080819197c123bcc3e8bb47\students-api\node_modules\supertest\lib\test.js:404:14)
+      at C:\Users\Kenzi\.codex\.chatgpt-projects\g-p-6abed0a9b080819197c123bcc3e8bb47\students-api\node_modules\supertest\lib\test.js:460:13
+      at Test._assertFunction (C:\Users\Kenzi\.codex\.chatgpt-projects\g-p-6abed0a9b080819197c123bcc3e8bb47\students-api\node_modules\supertest\lib\test.js:437:13)
+      at Test.assert (C:\Users\Kenzi\.codex\.chatgpt-projects\g-p-6abed0a9b080819197c123bcc3e8bb47\students-api\node_modules\supertest\lib\test.js:302:23)
+      at localAssert (C:\Users\Kenzi\.codex\.chatgpt-projects\g-p-6abed0a9b080819197c123bcc3e8bb47\students-api\node_modules\supertest\lib\test.js:220:38)
+      at Server.<anonymous> (C:\Users\Kenzi\.codex\.chatgpt-projects\g-p-6abed0a9b080819197c123bcc3e8bb47\students-api\node_modules\supertest\lib\test.js:227:13)
+      at Object.onceWrapper (node:events:630:28)
+      at Server.emit (node:events:509:28)
+      at emitCloseNT (node:net:2661:8)
+      at process.processTicksAndRejections (node:internal/process/task_queues:89:21)

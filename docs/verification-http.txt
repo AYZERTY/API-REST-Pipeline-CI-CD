@@ -1,0 +1,11 @@
+Vérification HTTP réelle sur un serveur local démarré séparément.
+GET /students -> 200
+GET /students/1 -> 200
+GET /students/999 -> 404
+POST /students -> 201
+POST /students -> 400
+POST /students -> 409
+PUT /students/1 -> 200
+GET /students/stats -> 200
+GET /students/search?q=ahmed -> 200
+DELETE /students/1 -> 200
