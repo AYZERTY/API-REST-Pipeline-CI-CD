@@ -1,0 +1,43 @@
+@baseUrl = http://localhost:3000
+
+### Liste — 200
+GET {{baseUrl}}/students
+
+### Étudiant — 200
+GET {{baseUrl}}/students/1
+
+### Introuvable — 404
+GET {{baseUrl}}/students/999
+
+### Création — 201 (une seule fois par redémarrage)
+POST {{baseUrl}}/students
+Content-Type: application/json
+
+{"firstName":"Alice","lastName":"Dupont","email":"alice@example.com","grade":14,"field":"informatique"}
+
+### Email manquant — 400
+POST {{baseUrl}}/students
+Content-Type: application/json
+
+{"firstName":"Alice","lastName":"Dupont","grade":14,"field":"informatique"}
+
+### Email déjà utilisé — 409
+POST {{baseUrl}}/students
+Content-Type: application/json
+
+{"firstName":"Alice","lastName":"Dupont","email":"ahmed@example.com","grade":14,"field":"informatique"}
+
+### Modification — 200
+PUT {{baseUrl}}/students/1
+Content-Type: application/json
+
+{"firstName":"Ahmed","lastName":"Ben Ali","email":"ahmed@example.com","grade":19,"field":"informatique"}
+
+### Statistiques — 200
+GET {{baseUrl}}/students/stats
+
+### Recherche — 200
+GET {{baseUrl}}/students/search?q=ahmed
+
+### Suppression — 200 (à faire après la recherche)
+DELETE {{baseUrl}}/students/1
