@@ -19,4 +19,4 @@ Les journaux joints sont des résultats **locaux** : `verification-http.txt`, `v
 
 Les exécutions GitHub sur Node.js 22 et 24 ont réussi à l'état initial, échoué après le bug volontaire, puis réussi après correction le 8 octobre 2026. Les liens et captures sont disponibles dans `RENDU.md` et `captures/`.
 
-L'historique publié a été créé via l'interface GitHub du compte AYZERTY avec des messages Conventional Commits. Le projet a été préparé avec une assistance IA.
+L'historique publié a été créé via l'interface GitHub du compte AYZERTY avec des messages Conventional Commits.

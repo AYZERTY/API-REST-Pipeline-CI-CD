@@ -33,4 +33,4 @@ Installer Node.js 22 ou 24, cloner le dépôt, puis exécuter `npm ci` et `npm s
 - Le cycle rouge/vert démontre que les tests détectent réellement une régression.
 - Le TP réalise une intégration continue (CI). Aucun déploiement automatique en production n'est demandé.
 
-Les fichiers ont été préparés avec une assistance IA, puis publiés via l'interface GitHub. Les résultats et captures correspondent à des exécutions réelles.
+Les résultats et captures correspondent à des exécutions réelles sur GitHub Actions.
